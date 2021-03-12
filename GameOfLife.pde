@@ -50,7 +50,16 @@ public void keyPressed() {
   // your code here
   if (key == ' '){
     running = !running;
-  } 
+  }
+  if (key == 'a' && frameRate < 10){
+    frameRate++;
+  }
+  if (key == 's'){
+    frameRate = 6;
+  }
+  if (key == 'd' && frameRate > 1) {
+    frameRate--;
+  }  
 }
 public void copyFromBufferToButtons() {
   //your code here
